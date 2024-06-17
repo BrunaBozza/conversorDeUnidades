@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Conversor de Unidades</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+      <h1>Conversor de Unidades</h1>
+      <section>
+         <div class="divPrincipal">
+            <h3>Temperatura</h3>
+            <div class="div1">
+               <p class="paragrafo-unidades">Selecione a unidade de temperatura:</p>
+               <select id="select-temp">
+                  <option value="celsius">Celsius (°C)</option>
+                  <option value="fahrenheit">Fahrenheit (°F)</option>
+               </select>
+               <input type="number" id="input-temp" placeholder="Valor">
+            </div>
+            <button onclick="temperatura()">Converter</button>
+            <div class="div2">
+               <p>Resultado:</p>
+               <p id="res-temp">0.00</p>
+            </div>
+         </div>
+
+         <div class="divPrincipal">
+            <h3>Comprimento</h3>
+            <div class="div1">
+               <p class="paragrafo-unidades">Selecione a unidade de comprimento:</p>
+               <select id="select-comp">
+                  <option value="metros">Metros (m)</option>
+                  <option value="pes">Pés (ft)</option>
+               </select>
+               <input type="number" id="input-comp" placeholder="Valor">
+            </div>
+            <button onclick="comprimento()">Converter</button>
+            <div class="div2">
+               <p>Resultado:</p>
+               <p id="res-comp">0.00</p>
+            </div>
+         </div>
+
+         <div class="divPrincipal">
+            <h3>Peso</h3>
+            <div class="div1">
+               <p class="paragrafo-unidades">Selecione a unidade de peso:</p>
+               <select id="select-peso">
+                  <option value="quilogramas">Quilogramas (kg)</option>
+                  <option value="libras">Libras (lb)</option>
+               </select>
+               <input type="number" id="input-peso" placeholder="Valor">
+            </div>
+            <button onclick="peso()">Converter</button>
+            <div class="div2">
+               <p>Resultado:</p>
+               <p id="res-peso">0.00</p>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <script src="script.js"></script>
+</body>
+</html>
